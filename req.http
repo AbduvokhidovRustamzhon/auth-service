@@ -1,0 +1,57 @@
+POST http://localhost:9999/admin/books
+Content-Type: multipart/form-data; boundary=WebAppBoundary
+
+--WebAppBoundary
+Content-Disposition: form-data;
+Content-Type: application/json
+
+
+###daa520
+
+
+POST http://localhost:9999/admin/books/remove
+Content-Type: application/json
+
+{
+"Id":10
+}
+
+
+###daa520
+
+POST http://localhost:9999/admin/book/show
+Content-Type: application/json
+
+{
+  "Id":10
+
+}
+
+
+######
+
+POST http://localhost:9999/login
+Content-Type: application/json
+
+{
+  "Name": "Parviz",
+  "Login": "Parviz",
+  "Password": "2511",
+  "Role": "admin"
+}
+
+###
+
+
+POST http://localhost:9999/newUser
+Content-Type: application/json
+
+{
+  "Name": "Ilnaz Gilnazov",
+  "Login": "SpasiboZaKurs",
+  "Password": "2511",
+  "Role": "user"
+}
+
+###
+
